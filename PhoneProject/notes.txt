@@ -1,0 +1,1 @@
+To enable portrait mode (currently only left/right landscape mode) go to game.cs ctor and enable InitializeportraitGraphics + change supportedOrientations

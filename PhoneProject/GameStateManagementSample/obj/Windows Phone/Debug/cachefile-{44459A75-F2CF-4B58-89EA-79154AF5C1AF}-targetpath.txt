@@ -1,0 +1,9 @@
+Content\background.xnb
+Content\blank.xnb
+Content\gradient.xnb
+Content\blue.xnb
+Content\green.xnb
+Content\red.xnb
+Content\TheLostVikings2.xnb
+Content\menufont.xnb
+Content\gamefont.xnb
