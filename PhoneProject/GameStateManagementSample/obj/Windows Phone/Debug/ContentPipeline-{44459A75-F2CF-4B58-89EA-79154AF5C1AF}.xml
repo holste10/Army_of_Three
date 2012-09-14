@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\background.xnb</Output>
-      <Time>2012-09-14T10:30:03.1071576+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\background.xnb</Output>
+      <Time>2012-09-14T17:59:56.1224863+02:00</Time>
     </Item>
     <Item>
       <Source>blank.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blank.xnb</Output>
-      <Time>2012-09-14T10:30:03.1081577+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blank.xnb</Output>
+      <Time>2012-09-14T17:59:56.1224863+02:00</Time>
     </Item>
     <Item>
       <Source>gradient.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gradient.xnb</Output>
-      <Time>2012-09-14T10:30:03.1111578+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gradient.xnb</Output>
+      <Time>2012-09-14T17:59:56.1244864+02:00</Time>
     </Item>
     <Item>
       <Source>blue.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blue.xnb</Output>
-      <Time>2012-09-14T10:30:03.1091577+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blue.xnb</Output>
+      <Time>2012-09-14T17:59:56.1224863+02:00</Time>
     </Item>
     <Item>
       <Source>green.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\green.xnb</Output>
-      <Time>2012-09-14T10:30:03.1121579+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\green.xnb</Output>
+      <Time>2012-09-14T17:59:56.1244864+02:00</Time>
     </Item>
     <Item>
       <Source>red.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\red.xnb</Output>
-      <Time>2012-09-14T10:30:03.1201583+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\red.xnb</Output>
+      <Time>2012-09-14T17:59:56.1304867+02:00</Time>
     </Item>
     <Item>
       <Source>TheLostVikings2.jpg</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\TheLostVikings2.xnb</Output>
-      <Time>2012-09-14T10:30:03.1051575+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\TheLostVikings2.xnb</Output>
+      <Time>2012-09-14T17:59:56.1204862+02:00</Time>
     </Item>
     <Item>
       <Source>menufont.spritefont</Source>
@@ -70,8 +70,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\menufont.xnb</Output>
-      <Time>2012-09-14T10:30:03.1131579+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\menufont.xnb</Output>
+      <Time>2012-09-14T17:59:56.1254864+02:00</Time>
     </Item>
     <Item>
       <Source>gamefont.spritefont</Source>
@@ -79,8 +79,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb</Output>
-      <Time>2012-09-14T10:30:03.1101578+02:00</Time>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb</Output>
+      <Time>2012-09-14T17:59:56.1234863+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -89,10 +89,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Github\INnlevering2\Army_of_Three\PhoneProject\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -121,7 +121,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-09-14T11:22:18.8977564+02:00</Value>
+        <Value>2012-09-04T14:25:26.8385414+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

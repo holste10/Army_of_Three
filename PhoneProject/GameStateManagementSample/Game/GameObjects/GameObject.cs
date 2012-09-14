@@ -21,12 +21,12 @@ namespace GameStateManagement.Game.GameObjects
         public Rectangle sourceBox { get; set; }
 
         protected Microsoft.Xna.Framework.Game game;
-        protected Vector2 position;
+        public Vector2 position { get; set; }
 
         public virtual void LoadContent() { }
         public virtual void Update(float deltaTime) { }
     }
-    
+
     public class Character : GameObject
     {
         public Character(Microsoft.Xna.Framework.Game game, Point position)
@@ -36,12 +36,19 @@ namespace GameStateManagement.Game.GameObjects
         }
     }
 
+    /// <summary>
+    /// Example of how a gameobject can be created. 
+    /// easy huh? :D
+    /// </summary>
     public class Player : Character
     {
-        public Player(Microsoft.Xna.Framework.Game game, Point position)
+        Vector2 velocity;
+        Vector2 gravity;
+        public Player(Microsoft.Xna.Framework.Game game, Point position, Vector2 gravity)
             : base(game, position)
         {
-            
+            velocity = new Vector2(0, 0);
+            this.gravity = gravity;
         }
 
         public override void LoadContent()
@@ -64,7 +71,17 @@ namespace GameStateManagement.Game.GameObjects
 
         public override void Update(float deltaTime)
         {
-            // Move 
+            float x = position.X;
+            x += deltaTime * velocity.X;
+
+            position = deltaTime * gravity;
+            position = deltaTime * velocity;
+
+            destinationBox = new Rectangle(
+                (int)position.X,
+                (int)position.Y,
+                objectSprite.Width,
+                objectSprite.Height);
 
             //if action button pressed
             //DoAction();
@@ -81,4 +98,24 @@ namespace GameStateManagement.Game.GameObjects
 
         }
     }
+
+    /*  public class GreenDude : Player
+      {
+          public GreenDude(Microsoft.Xna.Framework.Game game, Point position)
+              : base(game, position)
+          { 
+            
+          }
+
+          public override void LoadContent()
+          {
+              objectSprite = game.Content.Load<Texture2D>("green");
+              base.LoadContent();
+          }
+
+          public override void DoAction()
+          {
+            
+          }
+      }*/
 }

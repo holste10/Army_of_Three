@@ -59,3 +59,23 @@ C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSampl
 C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
 C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
 C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\background.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blank.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gradient.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blue.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\green.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\red.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\TheLostVikings2.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\menufont.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.dll
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.pdb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\GameStateManagementSample.dll
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\GameStateManagementSample.pdb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
