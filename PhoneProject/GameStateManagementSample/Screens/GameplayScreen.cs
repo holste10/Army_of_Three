@@ -136,7 +136,7 @@ namespace GameStateManagement
                 enemyPosition = Vector2.Lerp(enemyPosition, targetPosition, 0.05f);
                 foreach (GameObject obj in gameObjects)
                 {
-                    obj.Update(gameTime.ElapsedGameTime.Seconds);
+                    obj.Update(gameTime.ElapsedGameTime.Milliseconds);
                 }
 
             }
@@ -264,12 +264,11 @@ namespace GameStateManagement
         {
             if (moveRightBtn.Contains((int)position.X, (int)position.Y))
             {
-                gameObjects[0].position = gameObjects[0].position + new Vector2(5, 0);
-                //Debug.WriteLine("X:{0}, Y:{1}", position.X, position.Y);
+                gameObjects[0].velocity = new Vector2(10, 0);
             }
             else if (moveLeftBtn.Contains((int)position.X, (int)position.Y))
             {
-                gameObjects[0].position = gameObjects[0].position + new Vector2(-5, 0);
+                gameObjects[0].velocity = new Vector2(-10, 0);
             }
         }
 

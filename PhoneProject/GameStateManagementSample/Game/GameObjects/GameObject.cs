@@ -22,7 +22,7 @@ namespace GameStateManagement.Game.GameObjects
 
         protected Microsoft.Xna.Framework.Game game;
         public Vector2 position { get; set; }
-
+        public Vector2 velocity { get; set; }
         public virtual void LoadContent() { }
         public virtual void Update(float deltaTime) { }
     }
@@ -42,12 +42,11 @@ namespace GameStateManagement.Game.GameObjects
     /// </summary>
     public class Player : Character
     {
-        Vector2 velocity;
         Vector2 gravity;
         public Player(Microsoft.Xna.Framework.Game game, Point position, Vector2 gravity)
             : base(game, position)
         {
-            velocity = new Vector2(0, 0);
+            velocity = new Vector2(0.1f, 0);
             this.gravity = gravity;
         }
 
@@ -71,11 +70,9 @@ namespace GameStateManagement.Game.GameObjects
 
         public override void Update(float deltaTime)
         {
-            float x = position.X;
-            x += deltaTime * velocity.X;
 
-            position = deltaTime * gravity;
-            position = deltaTime * velocity;
+            //position = deltaTime * gravity;
+            position += deltaTime * velocity;
 
             destinationBox = new Rectangle(
                 (int)position.X,
