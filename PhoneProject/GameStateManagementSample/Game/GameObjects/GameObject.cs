@@ -8,6 +8,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameStateManagement
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public abstract class GameObject
     {
         
@@ -15,6 +18,7 @@ namespace GameStateManagement
         {
             this.game = game;
             this.position = new Vector2(position.X, position.Y);
+            this.velocity = Vector2.Zero;
             drawObject = true; //Letting it be default that an gameObject is drawn
         }
 

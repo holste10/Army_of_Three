@@ -5,65 +5,119 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
+/************************************************************************/
+/*  TODO: 
+ *          - Add special ability logic
+ *          - Add correct sprite and animation
+/************************************************************************/
 namespace GameStateManagement
 {
-     public class Player : Character
-    {
-        Vector2 gravity;
-        public Player(Microsoft.Xna.Framework.Game game, Point position, Vector2 gravity)
-            : base(game, position)
+
+    #region Class PlayerGreen
+
+    /// <summary>
+    /// Just a placeholder character, with a green square.
+    /// TODO: Add the actual sprite and animations. 
+    ///       Add special ability.
+    /// </summary>
+     public class PlayerGreen : Character
+     {
+        public PlayerGreen(Game game, Point position, Vector2 gravity)
+            : base(game, position, gravity)
         {
-            velocity = new Vector2(0.0f, 0.0f);
-            this.gravity = gravity;
+
         }
 
         public override void LoadContent()
         {
             objectSprite = game.Content.Load<Texture2D>("green");
-            destinationBox = new Rectangle(
-                (int)position.X,
-                (int)position.Y,
-                objectSprite.Width,
-                objectSprite.Height
-            );
-
-            sourceBox = new Rectangle(
-                0,
-                0,
-                objectSprite.Width,
-                objectSprite.Height
-            );
         }
 
         public override void Update(float deltaTime)
         {
-
-            //velocity += deltaTime * gravity;
-            position += deltaTime * velocity;
-
-            destinationBox = new Rectangle(
-                (int)position.X,
-                (int)position.Y,
-                objectSprite.Width,
-                objectSprite.Height);
-
+            base.Update(deltaTime);
+            
             //if action button pressed
             //DoAction();
             //------------------------
         }
 
-        public virtual void Jump()
+        public override void DoAction()
         {
-            velocity = new Vector2(velocity.X, -1);
-        }
-
-        public override void ApplyGravity(float deltaTime)
-        {
-            velocity += deltaTime * gravity;
-        }
-        public virtual void DoAction()
-        {
-
+            // Do this type of character special ability
         }
     }
+    #endregion
+
+    #region Class PlayerRed
+
+     /// <summary>
+    /// Just a placeholder character, with a Red square.
+    /// TODO: Add the actual sprite and animations. 
+    ///       Add special ability.
+    /// </summary>
+    public class PlayerRed : Character
+    {
+        public PlayerRed(Game game, Point position, Vector2 gravity)
+            : base(game, position, gravity)
+        {
+
+        }
+
+        public override void LoadContent()
+        {
+            objectSprite = game.Content.Load<Texture2D>("red");
+        }
+
+        public override void Update(float deltaTime)
+        {
+            base.Update(deltaTime);
+            //if action button pressed
+            //DoAction();
+            //------------------------
+        }
+
+        public override void DoAction()
+        {
+            // Do this type of character special ability
+        }
+    }
+
+    #endregion
+
+    #region Class PlayerBlue
+
+    /// <summary>
+    /// Just a placeholder character, with a Blue square.
+    /// TODO: Add the actual sprite and animations. 
+    ///       Add special ability.
+    /// </summary>
+    public class PlayerBlue : Character
+    {
+        public PlayerBlue(Game game, Point position, Vector2 gravity)
+            : base(game, position, gravity)
+        {
+            // Do this type of character special ability
+        }
+
+        public override void LoadContent()
+        {
+            objectSprite = game.Content.Load<Texture2D>("blue");
+        }
+
+        public override void Update(float deltaTime)
+        {
+            base.Update(deltaTime);
+            //if action button pressed
+            //DoAction();
+            //------------------------
+        }
+
+        public override void DoAction()
+        {
+            // Do this type of character special ability
+        }
+    }
+
+    #endregion
 }

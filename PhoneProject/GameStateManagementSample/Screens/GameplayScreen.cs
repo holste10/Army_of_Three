@@ -41,7 +41,7 @@ namespace GameStateManagement
 
         private List<GameObject> gameObjects = new List<GameObject>();
         private List<GameObject> buttons = new List<GameObject>();
-        private List<Player> players = new List<Player>();
+        private List<Character> players = new List<Character>();
         private int currentPlayerIndex;
 
         private PlayerInControlBtn p1s;
@@ -90,10 +90,6 @@ namespace GameStateManagement
             moveRightBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 320, 160, 160), buttonType.MOVE_RIGHT);
             jumpBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(0, 159, 160, 160), buttonType.JUMP);
             abilityBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 159, 160, 160), buttonType.SPECIAL_ATTACK);
-//             gameObjects.Add(moveLeftBtn);
-//             gameObjects.Add(moveRightBtn);
-//             gameObjects.Add(jumpBtn);
-//             gameObjects.Add(abilityBtn);
             buttons.Add(moveLeftBtn);
             buttons.Add(moveRightBtn);
             buttons.Add(jumpBtn);
@@ -102,17 +98,13 @@ namespace GameStateManagement
             p1s = new PlayerInControlBtn(ScreenManager.Game, new Point(200, 0), PlayerSelection.P1);
             p2s = new PlayerInControlBtn(ScreenManager.Game, new Point(400, 0), PlayerSelection.P2);
             p3s = new PlayerInControlBtn(ScreenManager.Game, new Point(600, 0), PlayerSelection.P3);
-//             gameObjects.Add(p1s);
-//             gameObjects.Add(p2s);
-//             gameObjects.Add(p3s);
-//             
             buttons.Add(p1s);
             buttons.Add(p2s);
             buttons.Add(p3s);
             
-            Player p1 = new Player(ScreenManager.Game, new Point(100, 100), gravity);
-            Player p2 = new Player(ScreenManager.Game, new Point(100, 200), gravity);
-            Player p3 = new Player(ScreenManager.Game, new Point(100, 300), gravity);
+            PlayerGreen p1 = new PlayerGreen(ScreenManager.Game, new Point(100, 100), gravity);
+            PlayerBlue p2 = new PlayerBlue(ScreenManager.Game, new Point(100, 200), gravity);
+            PlayerRed p3 = new PlayerRed(ScreenManager.Game, new Point(100, 300), gravity);
             currentPlayerIndex = 0;
             players.Add(p1);
             players.Add(p2);
@@ -185,27 +177,16 @@ namespace GameStateManagement
                 //enemyPosition = Vector2.Lerp(enemyPosition, targetPosition, 0.05f);
 
 
-                foreach (Player p in players)
+                foreach (Character p in players)
                 {
                     p.ApplyGravity(gameTime.ElapsedGameTime.Milliseconds);
                     float x = p.velocity.X;
                     float y = p.velocity.Y;
-                    if ((p.position.Y + p.sourceBox.Height) >= ScreenManager.GraphicsDevice.Viewport.Height
+                    if ((p.position.Y + p.sourceBox.Height) >= world.background.Height - 280
                         && p.velocity.Y > 0)
                     {
                         y = 0;
-                        p.position = new Vector2(p.position.X, ScreenManager.GraphicsDevice.Viewport.Height - p.sourceBox.Height);
-                    }
-                    if ((p.position.X + p.sourceBox.Width) >= ScreenManager.GraphicsDevice.Viewport.Width
-                        && p.velocity.X > 0)
-                    {
-                        x = 0;
-                        p.position = new Vector2(ScreenManager.GraphicsDevice.Viewport.Width-p.sourceBox.Width, p.position.Y);
-                    }
-                    else if(p.position.X <= 0 && p.velocity.X < 0)
-                    {
-                        x = 0;
-                        p.position = new Vector2(0, p.position.Y);
+                        p.position = new Vector2(p.position.X, world.background.Height - p.sourceBox.Height - 280);
                     }
                     p.velocity = new Vector2(x, y);
                 }
@@ -269,7 +250,6 @@ namespace GameStateManagement
                     break;
                 }
             }
-
             // if the user pressed the back button, we return to the main menu
             PlayerIndex player;
             if (input.IsNewButtonPress(Buttons.Back, ControllingPlayer, out player))
@@ -371,8 +351,6 @@ namespace GameStateManagement
             if (TransitionPosition > 0)
                 ScreenManager.FadeBackBufferToBlack(1f - TransitionAlpha);
         }
-
-
         #endregion
     }
 }
