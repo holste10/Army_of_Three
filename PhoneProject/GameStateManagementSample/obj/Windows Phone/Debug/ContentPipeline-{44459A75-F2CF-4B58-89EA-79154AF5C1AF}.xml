@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\background.xnb</Output>
-      <Time>2012-09-14T17:59:56.1224863+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\background.xnb</Output>
+      <Time>2012-09-14T20:35:43.9289346+02:00</Time>
     </Item>
     <Item>
       <Source>blank.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blank.xnb</Output>
-      <Time>2012-09-14T17:59:56.1224863+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blank.xnb</Output>
+      <Time>2012-09-14T20:35:43.9289346+02:00</Time>
     </Item>
     <Item>
       <Source>gradient.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gradient.xnb</Output>
-      <Time>2012-09-14T17:59:56.1244864+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gradient.xnb</Output>
+      <Time>2012-09-14T20:35:43.9309348+02:00</Time>
     </Item>
     <Item>
       <Source>blue.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blue.xnb</Output>
-      <Time>2012-09-14T17:59:56.1224863+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blue.xnb</Output>
+      <Time>2012-09-14T20:35:43.9299347+02:00</Time>
     </Item>
     <Item>
       <Source>green.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\green.xnb</Output>
-      <Time>2012-09-14T17:59:56.1244864+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\green.xnb</Output>
+      <Time>2012-09-14T20:35:43.9319348+02:00</Time>
     </Item>
     <Item>
       <Source>red.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\red.xnb</Output>
-      <Time>2012-09-14T17:59:56.1304867+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\red.xnb</Output>
+      <Time>2012-09-14T20:35:43.9389352+02:00</Time>
     </Item>
     <Item>
       <Source>TheLostVikings2.jpg</Source>
@@ -61,26 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\TheLostVikings2.xnb</Output>
-      <Time>2012-09-14T17:59:56.1204862+02:00</Time>
-    </Item>
-    <Item>
-      <Source>menufont.spritefont</Source>
-      <Name>menufont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\menufont.xnb</Output>
-      <Time>2012-09-14T17:59:56.1254864+02:00</Time>
-    </Item>
-    <Item>
-      <Source>gamefont.spritefont</Source>
-      <Name>gamefont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb</Output>
-      <Time>2012-09-14T17:59:56.1234863+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\TheLostVikings2.xnb</Output>
+      <Time>2012-09-14T20:35:43.9269345+02:00</Time>
     </Item>
     <Item>
       <Source>clickforp1.png</Source>
@@ -88,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp1.xnb</Output>
-      <Time>2012-09-16T12:47:17.9815102+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp1.xnb</Output>
+      <Time>2012-09-16T15:35:28.2242843+02:00</Time>
     </Item>
     <Item>
       <Source>clickforp2.png</Source>
@@ -97,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp2.xnb</Output>
-      <Time>2012-09-16T12:47:17.9840102+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp2.xnb</Output>
+      <Time>2012-09-16T15:35:28.2242843+02:00</Time>
     </Item>
     <Item>
       <Source>clickforp3.png</Source>
@@ -106,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp3.xnb</Output>
-      <Time>2012-09-16T12:47:17.9865103+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp3.xnb</Output>
+      <Time>2012-09-16T15:35:28.2252843+02:00</Time>
     </Item>
     <Item>
       <Source>jumpBtn.png</Source>
@@ -115,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\jumpBtn.xnb</Output>
-      <Time>2012-09-16T14:15:43.4885114+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\jumpBtn.xnb</Output>
+      <Time>2012-09-16T15:35:28.2252843+02:00</Time>
     </Item>
     <Item>
       <Source>leftBtn.png</Source>
@@ -124,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\leftBtn.xnb</Output>
-      <Time>2012-09-16T14:15:43.4910115+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\leftBtn.xnb</Output>
+      <Time>2012-09-16T15:35:28.2252843+02:00</Time>
     </Item>
     <Item>
       <Source>rightbtn.png</Source>
@@ -133,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\rightbtn.xnb</Output>
-      <Time>2012-09-16T14:15:43.4910115+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\rightbtn.xnb</Output>
+      <Time>2012-09-16T15:35:28.2262844+02:00</Time>
     </Item>
     <Item>
       <Source>specialAbilityBtn.png</Source>
@@ -142,8 +124,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\specialAbilityBtn.xnb</Output>
-      <Time>2012-09-16T14:15:43.4785113+02:00</Time>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\specialAbilityBtn.xnb</Output>
+      <Time>2012-09-16T15:35:28.2262844+02:00</Time>
+    </Item>
+    <Item>
+      <Source>menufont.spritefont</Source>
+      <Name>menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\menufont.xnb</Output>
+      <Time>2012-09-14T20:35:43.9329349+02:00</Time>
+    </Item>
+    <Item>
+      <Source>gamefont.spritefont</Source>
+      <Name>gamefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb</Output>
+      <Time>2012-09-14T20:35:43.9309348+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -152,39 +152,39 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Github\INnlevering2\Army_of_Three\PhoneProject\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Key>E:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2011-09-01T16:22:30+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Key>E:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
         <Value>2011-09-01T16:22:30+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Key>E:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
         <Value>2011-09-01T16:22:30+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Key>E:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
         <Value>2011-09-01T16:22:30+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Key>E:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
         <Value>2011-09-01T16:22:30+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Key>E:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
         <Value>2011-09-01T16:22:30+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-09-04T14:25:26.8385414+02:00</Value>
+        <Key>E:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-09-11T22:59:13.7772262+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

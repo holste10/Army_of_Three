@@ -86,3 +86,30 @@ C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\leftBtn.xnb
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\rightbtn.xnb
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\specialAbilityBtn.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\background.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blank.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gradient.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blue.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\green.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\red.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\TheLostVikings2.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp1.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp2.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp3.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\jumpBtn.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\leftBtn.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\rightbtn.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\specialAbilityBtn.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\menufont.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.dll
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.pdb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\GameStateManagementSample.dll
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\GameStateManagementSample.pdb
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\AppManifest.xaml
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
+C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
