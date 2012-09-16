@@ -46,7 +46,7 @@ namespace GameStateManagement.Game.GameObjects
         public Player(Microsoft.Xna.Framework.Game game, Point position, Vector2 gravity)
             : base(game, position)
         {
-            velocity = new Vector2(0.1f, 0);
+            velocity = new Vector2(0.0f, 0.0f);
             this.gravity = gravity;
         }
 

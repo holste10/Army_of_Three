@@ -170,6 +170,10 @@ namespace GameStateManagement
                 Debug.WriteLine("2");
             }
             TouchCollection touches = TouchPanel.GetState();
+            if (touches.Count == 0)
+            {   
+                gameObjects[0].velocity = new Vector2(0, 0);
+            }
             foreach (TouchLocation touch in touches)
             {
                 //Vector2 position = gs.Position;
@@ -178,7 +182,7 @@ namespace GameStateManagement
                 {
                     CheckForMovement(touch.Position);
                     break;
-                }
+                }   
             }
             //foreach (GestureSample gs in gestures)
             //{
@@ -264,12 +268,13 @@ namespace GameStateManagement
         {
             if (moveRightBtn.Contains((int)position.X, (int)position.Y))
             {
-                gameObjects[0].velocity = new Vector2(10, 0);
+                gameObjects[0].velocity = new Vector2(0.2f, 0);
             }
             else if (moveLeftBtn.Contains((int)position.X, (int)position.Y))
             {
-                gameObjects[0].velocity = new Vector2(-10, 0);
+                gameObjects[0].velocity = new Vector2(-0.2f, 0);
             }
+            
         }
 
         /// <summary>
