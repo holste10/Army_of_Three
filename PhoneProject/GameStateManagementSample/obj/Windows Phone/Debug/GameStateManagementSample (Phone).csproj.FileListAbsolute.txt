@@ -27,9 +27,3 @@ bin\Windows Phone\Debug\
 C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
 C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
 C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\world.xnb
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\AppManifest.xaml
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml.g
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
-bin\Windows Phone\Debug\

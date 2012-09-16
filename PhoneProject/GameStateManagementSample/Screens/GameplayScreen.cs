@@ -252,7 +252,6 @@ namespace GameStateManagement
                     {
                         currentPlayerIndex = 2;
                     }
-
                 }
             }
 
@@ -314,6 +313,7 @@ namespace GameStateManagement
             spriteBatch = ScreenManager.SpriteBatch;
 
             // Draw from camera tranformation!
+            // Draw object according to world coordinates.
             spriteBatch.Begin(
                 SpriteSortMode.Deferred,
                 BlendState.AlphaBlend,
@@ -346,6 +346,7 @@ namespace GameStateManagement
             }
             spriteBatch.End();
 
+            // Draw's the object according to window coordinates.
             // Don't let camera fuck up the positioning of the object! 
             spriteBatch.Begin();
             foreach (GameObject button in buttons)

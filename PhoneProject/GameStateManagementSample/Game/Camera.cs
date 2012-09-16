@@ -41,7 +41,7 @@ namespace GameStateManagement
 
             _centre = new Vector2(
                 activePlayer.destinationBox.X + (activePlayer.destinationBox.Width / 2) - 400,
-                activePlayer.destinationBox.Y + (activePlayer.destinationBox.Height / 2) - 240);
+                activePlayer.destinationBox.Y + (activePlayer.destinationBox.Height / 2) - 340);
 
             _transform = Matrix.CreateScale(new Vector3(1.0f, 1.0f, 0)) *
                          Matrix.CreateTranslation(-_centre.X, -_centre.Y, 0);
