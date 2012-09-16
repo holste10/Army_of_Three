@@ -28,6 +28,7 @@ namespace GameStateManagement
         public Vector2 velocity { get; set; }
         public virtual void LoadContent() { }
         public virtual void Update(float deltaTime) { }
+        public virtual void ApplyGravity(float deltaTime) { }
     }
 }
     
