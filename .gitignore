@@ -1,0 +1,11 @@
+# Common files to ignore
+*.swp
+*.zip
+*.suo
+*.user
+PhoneProject/GameStateManagementSample/bin
+PhoneProject/GameStateManagementSample/obj
+PhoneProject/Content/bin
+PhoneProject/Content/obj
+*.cachefile
+*.ccgame
