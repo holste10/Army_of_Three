@@ -7,3 +7,6 @@ Content\red.xnb
 Content\TheLostVikings2.xnb
 Content\menufont.xnb
 Content\gamefont.xnb
+Content\clickforp1.xnb
+Content\clickforp2.xnb
+Content\clickforp3.xnb

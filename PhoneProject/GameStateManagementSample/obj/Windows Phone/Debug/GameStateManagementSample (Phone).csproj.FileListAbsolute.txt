@@ -79,9 +79,6 @@ C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
-C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\AppManifest.xaml
-C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml.g
-C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
-bin\Windows Phone\Debug\
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp1.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp2.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp3.xnb

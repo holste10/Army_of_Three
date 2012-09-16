@@ -16,7 +16,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
-using GameStateManagement.Game.GameObjects;
+
 
 using Microsoft.Xna.Framework.Input.Touch;
 #endregion
@@ -39,12 +39,18 @@ namespace GameStateManagement
         Vector2 enemyPosition = new Vector2(100, 100);
         private SpriteBatch spriteBatch;
         Random random = new Random();
-        Vector2 gravity = new Vector2(0, 50);
+        Vector2 gravity = new Vector2(0, 1);
 
-        List<GameObject> gameObjects = new List<GameObject>();
+        private List<GameObject> gameObjects = new List<GameObject>();
+        private List<Player> players = new List<Player>();
+        private int currentPlayerIndex;
 
-        Rectangle moveLeftBtn;
-        Rectangle moveRightBtn;
+        private Rectangle moveLeftBtn;
+        private Rectangle moveRightBtn;
+
+        private PlayerSelectionObject p1s;
+        private PlayerSelectionObject p2s;
+        private PlayerSelectionObject p3s;
 
         #endregion
 
@@ -76,7 +82,25 @@ namespace GameStateManagement
                 content = new ContentManager(ScreenManager.Game.Services, "Content");
             spriteBatch = ScreenManager.SpriteBatch;
             gameFont = content.Load<SpriteFont>("gamefont");
-            gameObjects.Add(new Player(ScreenManager.Game, new Point(100, 100), gravity));
+
+        
+            p1s = new PlayerSelectionObject(ScreenManager.Game, new Point(200, 0), PlayerSelection.P1);
+            p2s = new PlayerSelectionObject(ScreenManager.Game, new Point(400, 0), PlayerSelection.P2);
+            p3s = new PlayerSelectionObject(ScreenManager.Game, new Point(600, 0), PlayerSelection.P3);
+            gameObjects.Add(p1s);
+            gameObjects.Add(p2s);
+            gameObjects.Add(p3s);
+            
+            Player p1 = new Player(ScreenManager.Game, new Point(100, 100), gravity);
+            Player p2 = new Player(ScreenManager.Game, new Point(100, 200), gravity);
+            Player p3 = new Player(ScreenManager.Game, new Point(100, 300), gravity);
+            currentPlayerIndex = 0;
+            players.Add(p1);
+            players.Add(p2);
+            players.Add(p3);
+            gameObjects.Add(p1);
+            gameObjects.Add(p2);
+            gameObjects.Add(p3);
 
             foreach (GameObject gameObject in gameObjects)
             {
@@ -157,24 +181,33 @@ namespace GameStateManagement
 
             KeyboardState keyboardState = input.CurrentKeyboardStates[playerIndex];
             GamePadState gamePadState = input.CurrentGamePadStates[playerIndex];
-
-            TouchCollection tc = input.TouchState;
-
-            while (TouchPanel.IsGestureAvailable)
+            
+            List<GestureSample> gestures = input.Gestures;
+            foreach (GestureSample gs in input.Gestures)
             {
-                Debug.WriteLine("1");
+                if (gs.GestureType == GestureType.Tap)
+                {
+                    if(p1s.destinationBox.Intersects(new Rectangle((int)gs.Position.X, (int)gs.Position.Y, 0, 0)))
+                    {
+                        currentPlayerIndex = 0;
+                    }
+                    else if (p2s.destinationBox.Intersects(new Rectangle((int)gs.Position.X, (int)gs.Position.Y, 0, 0)))
+                    {
+                        currentPlayerIndex = 1;
+                    }
+                    else if (p3s.destinationBox.Intersects(new Rectangle((int)gs.Position.X, (int)gs.Position.Y, 0, 0)))
+                    {
+                        currentPlayerIndex = 2;
+                    }
+                }
             }
 
-            if (!TouchPanel.IsGestureAvailable)
+            //TouchCollection touches = input.TouchState;//TouchPanel.GetState();
+            if (input.TouchState.Count == 0)
             {
-                Debug.WriteLine("2");
+                players[currentPlayerIndex].velocity = new Vector2(0, 0);
             }
-            TouchCollection touches = TouchPanel.GetState();
-            if (touches.Count == 0)
-            {   
-                gameObjects[0].velocity = new Vector2(0, 0);
-            }
-            foreach (TouchLocation touch in touches)
+            foreach (TouchLocation touch in input.TouchState)
             {
                 //Vector2 position = gs.Position;
                 if ((touch.State == TouchLocationState.Pressed
@@ -182,7 +215,8 @@ namespace GameStateManagement
                 {
                     CheckForMovement(touch.Position);
                     break;
-                }   
+                }
+                
             }
             //foreach (GestureSample gs in gestures)
             //{
@@ -268,11 +302,11 @@ namespace GameStateManagement
         {
             if (moveRightBtn.Contains((int)position.X, (int)position.Y))
             {
-                gameObjects[0].velocity = new Vector2(0.2f, 0);
+                players[currentPlayerIndex].velocity = new Vector2(0.2f, 0);
             }
             else if (moveLeftBtn.Contains((int)position.X, (int)position.Y))
             {
-                gameObjects[0].velocity = new Vector2(-0.2f, 0);
+                players[currentPlayerIndex].velocity = new Vector2(-0.2f, 0);
             }
             
         }

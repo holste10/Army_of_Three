@@ -82,6 +82,33 @@
       <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb</Output>
       <Time>2012-09-14T17:59:56.1234863+02:00</Time>
     </Item>
+    <Item>
+      <Source>clickforp1.png</Source>
+      <Name>clickforp1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp1.xnb</Output>
+      <Time>2012-09-16T12:47:17.9815102+02:00</Time>
+    </Item>
+    <Item>
+      <Source>clickforp2.png</Source>
+      <Name>clickforp2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp2.xnb</Output>
+      <Time>2012-09-16T12:47:17.9840102+02:00</Time>
+    </Item>
+    <Item>
+      <Source>clickforp3.png</Source>
+      <Name>clickforp3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp3.xnb</Output>
+      <Time>2012-09-16T12:47:17.9865103+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{44459A75-F2CF-4B58-89EA-79154AF5C1AF}</ContentProjectGUID>
