@@ -82,3 +82,7 @@ C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp1.xnb
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp2.xnb
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp3.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\jumpBtn.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\leftBtn.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\rightbtn.xnb
+C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\specialAbilityBtn.xnb

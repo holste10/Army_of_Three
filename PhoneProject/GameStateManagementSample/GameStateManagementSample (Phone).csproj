@@ -82,9 +82,10 @@
   <ItemGroup>
     <Compile Include="Game.cs" />
     <Compile Include="Game\GameObjects\Character.cs" />
+    <Compile Include="Game\GameObjects\ClickableRectangle.cs" />
     <Compile Include="Game\GameObjects\GameObject.cs" />
     <Compile Include="Game\GameObjects\Player.cs" />
-    <Compile Include="Game\GameObjects\PlayerSelectionObject.cs" />
+    <Compile Include="Game\GameObjects\PlayerInControlBtn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScreenManager\GameScreen.cs" />
     <Compile Include="ScreenManager\InputState.cs" />

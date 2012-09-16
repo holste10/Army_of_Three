@@ -7,8 +7,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameStateManagement
 {
+
+    /// <summary>
+    /// A class for the selection of player in control on top of the screen. 
+    /// </summary>
     enum PlayerSelection { P1, P2, P3};
-    class PlayerSelectionObject : GameObject
+    class PlayerInControlBtn : GameObject
     {
 
         private PlayerSelection playerSelection;
@@ -18,7 +22,7 @@ namespace GameStateManagement
         /// <param name="game"></param>
         /// <param name="position"></param>
         /// <param name="playerselection">Which of the 3 gui elements for player selection this inistance represents</param>
-        public PlayerSelectionObject(Game game, Point position, PlayerSelection playerselection)
+        public PlayerInControlBtn(Game game, Point position, PlayerSelection playerselection)
             : base(game, position)
         {
             this.playerSelection = playerselection;

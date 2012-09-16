@@ -10,3 +10,7 @@ Content\gamefont.xnb
 Content\clickforp1.xnb
 Content\clickforp2.xnb
 Content\clickforp3.xnb
+Content\jumpBtn.xnb
+Content\leftBtn.xnb
+Content\rightbtn.xnb
+Content\specialAbilityBtn.xnb

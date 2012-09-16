@@ -109,6 +109,42 @@
       <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp3.xnb</Output>
       <Time>2012-09-16T12:47:17.9865103+02:00</Time>
     </Item>
+    <Item>
+      <Source>jumpBtn.png</Source>
+      <Name>jumpBtn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\jumpBtn.xnb</Output>
+      <Time>2012-09-16T14:15:43.4885114+02:00</Time>
+    </Item>
+    <Item>
+      <Source>leftBtn.png</Source>
+      <Name>leftBtn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\leftBtn.xnb</Output>
+      <Time>2012-09-16T14:15:43.4910115+02:00</Time>
+    </Item>
+    <Item>
+      <Source>rightbtn.png</Source>
+      <Name>rightbtn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\rightbtn.xnb</Output>
+      <Time>2012-09-16T14:15:43.4910115+02:00</Time>
+    </Item>
+    <Item>
+      <Source>specialAbilityBtn.png</Source>
+      <Name>specialAbilityBtn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Github\INnlevering2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\specialAbilityBtn.xnb</Output>
+      <Time>2012-09-16T14:15:43.4785113+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{44459A75-F2CF-4B58-89EA-79154AF5C1AF}</ContentProjectGUID>

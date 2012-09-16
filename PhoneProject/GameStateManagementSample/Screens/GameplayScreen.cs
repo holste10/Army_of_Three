@@ -45,12 +45,14 @@ namespace GameStateManagement
         private List<Player> players = new List<Player>();
         private int currentPlayerIndex;
 
-        private Rectangle moveLeftBtn;
-        private Rectangle moveRightBtn;
+        private PlayerInControlBtn p1s;
+        private PlayerInControlBtn p2s;
+        private PlayerInControlBtn p3s;
 
-        private PlayerSelectionObject p1s;
-        private PlayerSelectionObject p2s;
-        private PlayerSelectionObject p3s;
+        private ClickableRectangle moveLeftBtn;
+        private ClickableRectangle moveRightBtn;
+        private ClickableRectangle jumpBtn;
+        private ClickableRectangle abilityBtn;
 
         #endregion
 
@@ -66,10 +68,6 @@ namespace GameStateManagement
             TransitionOffTime = TimeSpan.FromSeconds(0.5);
 
             EnabledGestures = GestureType.Hold | GestureType.Tap;
-            // EnabledGestures = 
-            moveLeftBtn = new Rectangle(0, 320, 160, 160);
-            moveRightBtn = new Rectangle(640, 320, 160, 160);
-
         }
 
 
@@ -83,10 +81,17 @@ namespace GameStateManagement
             spriteBatch = ScreenManager.SpriteBatch;
             gameFont = content.Load<SpriteFont>("gamefont");
 
-        
-            p1s = new PlayerSelectionObject(ScreenManager.Game, new Point(200, 0), PlayerSelection.P1);
-            p2s = new PlayerSelectionObject(ScreenManager.Game, new Point(400, 0), PlayerSelection.P2);
-            p3s = new PlayerSelectionObject(ScreenManager.Game, new Point(600, 0), PlayerSelection.P3);
+            moveLeftBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(0, 320, 160, 160), buttonType.MOVE_LEFT);
+            moveRightBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 320, 160, 160), buttonType.MOVE_RIGHT);
+            jumpBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(0, 160, 160, 160), buttonType.JUMP);
+            abilityBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 160, 160, 160), buttonType.SPECIAL_ATTACK);
+            gameObjects.Add(moveLeftBtn);
+            gameObjects.Add(moveRightBtn);
+            gameObjects.Add(jumpBtn);
+            gameObjects.Add(abilityBtn);
+            p1s = new PlayerInControlBtn(ScreenManager.Game, new Point(200, 0), PlayerSelection.P1);
+            p2s = new PlayerInControlBtn(ScreenManager.Game, new Point(400, 0), PlayerSelection.P2);
+            p3s = new PlayerInControlBtn(ScreenManager.Game, new Point(600, 0), PlayerSelection.P3);
             gameObjects.Add(p1s);
             gameObjects.Add(p2s);
             gameObjects.Add(p3s);
@@ -187,22 +192,22 @@ namespace GameStateManagement
             {
                 if (gs.GestureType == GestureType.Tap)
                 {
-                    if(p1s.destinationBox.Intersects(new Rectangle((int)gs.Position.X, (int)gs.Position.Y, 0, 0)))
+                    if (p1s.destinationBox.Contains((int)gs.Position.X, (int)gs.Position.Y))
                     {
                         currentPlayerIndex = 0;
                     }
-                    else if (p2s.destinationBox.Intersects(new Rectangle((int)gs.Position.X, (int)gs.Position.Y, 0, 0)))
+                    else if (p2s.destinationBox.Contains((int)gs.Position.X, (int)gs.Position.Y))
                     {
                         currentPlayerIndex = 1;
                     }
-                    else if (p3s.destinationBox.Intersects(new Rectangle((int)gs.Position.X, (int)gs.Position.Y, 0, 0)))
+                    else if (p3s.destinationBox.Contains((int)gs.Position.X, (int)gs.Position.Y))
                     {
                         currentPlayerIndex = 2;
                     }
+
                 }
             }
 
-            //TouchCollection touches = input.TouchState;//TouchPanel.GetState();
             if (input.TouchState.Count == 0)
             {
                 players[currentPlayerIndex].velocity = new Vector2(0, 0);
@@ -218,38 +223,6 @@ namespace GameStateManagement
                 }
                 
             }
-            //foreach (GestureSample gs in gestures)
-            //{
-            //    Vector2 position = gs.Position;
-            //    if((touches.State == TouchLocationState.Pressed
-            //            || touch.State == TouchLocationState.Moved)
-            //            && touch.Position.X > centerOfScreen)
-            //    {
-            //        DoSomething();
-            //        break;
-            //    }
-            //    if (gs.GestureType == GestureType.FreeDrag)
-            //    {
-            //        CheckForMovement(position);
-            //    }
-            //    if (gs.GestureType == GestureType.DragComplete)
-            //    {
-            //        CheckForMovement(position);
-            //    }
-
-            //    //switch (gs.GestureType)
-            //    //{
-            //    //    case GestureType.FreeDrag:
-            //    //        CheckForMovement(position);
-            //    //        break;
-            //    //    case GestureType.Tap:
-            //    //        CheckForMovement(position);
-            //    //        break;
-            //    //    case GestureType.Hold:
-            //    //        CheckForMovement(position);
-            //    //        break;
-            //    //}
-            //}
 
             // if the user pressed the back button, we return to the main menu
             PlayerIndex player;
@@ -257,36 +230,6 @@ namespace GameStateManagement
             {
                 LoadingScreen.Load(ScreenManager, false, ControllingPlayer, new BackgroundScreen(), new MainMenuScreen());
             }
-
-            #region asd
-            //    else
-            //    {
-            //        // Otherwise move the player position.
-            //        Vector2 movement = Vector2.Zero;
-
-            //        if (keyboardState.IsKeyDown(Keys.Left))
-            //            movement.X--;
-
-            //        if (keyboardState.IsKeyDown(Keys.Right))
-            //            movement.X++;
-
-            //        if (keyboardState.IsKeyDown(Keys.Up))
-            //            movement.Y--;
-
-            //        if (keyboardState.IsKeyDown(Keys.Down))
-            //            movement.Y++;
-
-            //        Vector2 thumbstick = gamePadState.ThumbSticks.Left;
-
-            //        movement.X += thumbstick.X;
-            //        movement.Y -= thumbstick.Y;
-
-            //        if (movement.Length() > 1)
-            //            movement.Normalize();
-
-            //        playerPosition += movement * 2;
-            //    }
-            #endregion
 
         }
 
@@ -300,11 +243,11 @@ namespace GameStateManagement
 
         private void CheckForMovement(Vector2 position)
         {
-            if (moveRightBtn.Contains((int)position.X, (int)position.Y))
+            if (moveRightBtn.destinationBox.Contains((int)position.X, (int)position.Y))
             {
                 players[currentPlayerIndex].velocity = new Vector2(0.2f, 0);
             }
-            else if (moveLeftBtn.Contains((int)position.X, (int)position.Y))
+            else if (moveLeftBtn.destinationBox.Contains((int)position.X, (int)position.Y))
             {
                 players[currentPlayerIndex].velocity = new Vector2(-0.2f, 0);
             }
@@ -328,12 +271,18 @@ namespace GameStateManagement
             {
                 if (gameObject.objectSprite != null)
                 {
-                    spriteBatch.Draw(
+                    if (gameObject.drawObject)
+                    {
+                        spriteBatch.Draw(
                         gameObject.objectSprite,
                         gameObject.destinationBox,
                         gameObject.sourceBox,
-                        Color.White
-                    );
+                        Color.White );
+                    }
+                }
+                else
+                {
+                    Debug.WriteLine("GameObject {0} has not set it's objectSprite", gameObject.ToString());
                 }
             }
 

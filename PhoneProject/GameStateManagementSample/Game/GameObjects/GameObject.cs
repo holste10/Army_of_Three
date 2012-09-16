@@ -10,12 +10,15 @@ namespace GameStateManagement
 {
     public abstract class GameObject
     {
+        
         public GameObject(Microsoft.Xna.Framework.Game game, Point position)
         {
             this.game = game;
             this.position = new Vector2(position.X, position.Y);
+            drawObject = true; //Letting it be default that an gameObject is drawn
         }
 
+        public bool drawObject { get; set; }
         public Texture2D objectSprite { get; set; }
         public Rectangle destinationBox { get; set; }
         public Rectangle sourceBox { get; set; }
