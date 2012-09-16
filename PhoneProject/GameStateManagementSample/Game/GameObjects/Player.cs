@@ -38,7 +38,7 @@ namespace GameStateManagement
         public override void Update(float deltaTime)
         {
 
-            //position = deltaTime * gravity;
+            //velocity += deltaTime * gravity;
             position += deltaTime * velocity;
 
             destinationBox = new Rectangle(
@@ -54,9 +54,13 @@ namespace GameStateManagement
 
         public virtual void Jump()
         {
-
+            velocity = new Vector2(velocity.X, -1);
         }
 
+        public override void ApplyGravity(float deltaTime)
+        {
+            velocity += deltaTime * gravity;
+        }
         public virtual void DoAction()
         {
 

@@ -38,8 +38,7 @@ namespace GameStateManagement
         Vector2 playerPosition = new Vector2(100, 100);
         Vector2 enemyPosition = new Vector2(100, 100);
         private SpriteBatch spriteBatch;
-        Random random = new Random();
-        Vector2 gravity = new Vector2(0, 1);
+        Vector2 gravity = new Vector2(0, 0.001f);
 
         private List<GameObject> gameObjects = new List<GameObject>();
         private List<Player> players = new List<Player>();
@@ -83,8 +82,8 @@ namespace GameStateManagement
 
             moveLeftBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(0, 320, 160, 160), buttonType.MOVE_LEFT);
             moveRightBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 320, 160, 160), buttonType.MOVE_RIGHT);
-            jumpBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(0, 160, 160, 160), buttonType.JUMP);
-            abilityBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 160, 160, 160), buttonType.SPECIAL_ATTACK);
+            jumpBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(0, 159, 160, 160), buttonType.JUMP);
+            abilityBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 159, 160, 160), buttonType.SPECIAL_ATTACK);
             gameObjects.Add(moveLeftBtn);
             gameObjects.Add(moveRightBtn);
             gameObjects.Add(jumpBtn);
@@ -151,18 +150,44 @@ namespace GameStateManagement
 
             if (IsActive)
             {
-                // Apply some random jitter to make the enemy move around.
-                const float randomization = 10;
+                //// Apply some random jitter to make the enemy move around.
+                //const float randomization = 10;
 
-                enemyPosition.X += (float)(random.NextDouble() - 0.5) * randomization;
-                enemyPosition.Y += (float)(random.NextDouble() - 0.5) * randomization;
+                //enemyPosition.X += (float)(random.NextDouble() - 0.5) * randomization;
+                //enemyPosition.Y += (float)(random.NextDouble() - 0.5) * randomization;
 
-                // Apply a stabilizing force to stop the enemy moving off the screen.
-                Vector2 targetPosition = new Vector2(
-                    ScreenManager.GraphicsDevice.Viewport.Width / 2 - gameFont.MeasureString("Insert Gameplay Here").X / 2,
-                    200);
+                //// Apply a stabilizing force to stop the enemy moving off the screen.
+                //Vector2 targetPosition = new Vector2(
+                //    ScreenManager.GraphicsDevice.Viewport.Width / 2 - gameFont.MeasureString("Insert Gameplay Here").X / 2,
+                //    200);
 
-                enemyPosition = Vector2.Lerp(enemyPosition, targetPosition, 0.05f);
+                //enemyPosition = Vector2.Lerp(enemyPosition, targetPosition, 0.05f);
+
+
+                foreach (Player p in players)
+                {
+                    p.ApplyGravity(gameTime.ElapsedGameTime.Milliseconds);
+                    float x = p.velocity.X;
+                    float y = p.velocity.Y;
+                    if ((p.position.Y + p.sourceBox.Height) >= ScreenManager.GraphicsDevice.Viewport.Height
+                        && p.velocity.Y > 0)
+                    {
+                        y = 0;
+                        p.position = new Vector2(p.position.X, ScreenManager.GraphicsDevice.Viewport.Height - p.sourceBox.Height);
+                    }
+                    if ((p.position.X + p.sourceBox.Width) >= ScreenManager.GraphicsDevice.Viewport.Width
+                        && p.velocity.X > 0)
+                    {
+                        x = 0;
+                        p.position = new Vector2(ScreenManager.GraphicsDevice.Viewport.Width-p.sourceBox.Width, p.position.Y);
+                    }
+                    else if(p.position.X <= 0 && p.velocity.X < 0)
+                    {
+                        x = 0;
+                        p.position = new Vector2(0, p.position.Y);
+                    }
+                    p.velocity = new Vector2(x, y);
+                }
                 foreach (GameObject obj in gameObjects)
                 {
                     obj.Update(gameTime.ElapsedGameTime.Milliseconds);
@@ -235,10 +260,11 @@ namespace GameStateManagement
 
         private void CheckForAbilitiesUse(Vector2 position)
         {
-            //if (burp.Contains((int)position.X, (int)position.Y))
-            //{
-            //    Debug.WriteLine("X:{0}, Y:{1}", position.X, position.Y);
-            //}
+            if (jumpBtn.destinationBox.Contains((int)position.X, (int)position.Y))
+            {
+                //Debug.WriteLine("X:{0}, Y:{1}", position.X, position.Y);
+                players[currentPlayerIndex].Jump();
+            }
         }
 
         private void CheckForMovement(Vector2 position)
