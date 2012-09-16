@@ -145,6 +145,15 @@
       <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb</Output>
       <Time>2012-09-14T20:35:43.9309348+02:00</Time>
     </Item>
+    <Item>
+      <Source>world.png</Source>
+      <Name>world</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\world.xnb</Output>
+      <Time>2012-09-16T20:15:39.0718097+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{44459A75-F2CF-4B58-89EA-79154AF5C1AF}</ContentProjectGUID>

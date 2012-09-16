@@ -66,24 +66,4 @@ namespace GameStateManagement
 
         }
     }
-
-    /*  public class GreenDude : Player
-      {
-          public GreenDude(Microsoft.Xna.Framework.Game game, Point position)
-              : base(game, position)
-          { 
-            
-          }
-
-          public override void LoadContent()
-          {
-              objectSprite = game.Content.Load<Texture2D>("green");
-              base.LoadContent();
-          }
-
-          public override void DoAction()
-          {
-            
-          }
-      }*/
 }

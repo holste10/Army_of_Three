@@ -16,9 +16,8 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
-
-
 using Microsoft.Xna.Framework.Input.Touch;
+
 #endregion
 
 namespace GameStateManagement
@@ -41,6 +40,7 @@ namespace GameStateManagement
         Vector2 gravity = new Vector2(0, 0.001f);
 
         private List<GameObject> gameObjects = new List<GameObject>();
+        private List<GameObject> buttons = new List<GameObject>();
         private List<Player> players = new List<Player>();
         private int currentPlayerIndex;
 
@@ -52,6 +52,9 @@ namespace GameStateManagement
         private ClickableRectangle moveRightBtn;
         private ClickableRectangle jumpBtn;
         private ClickableRectangle abilityBtn;
+
+        private Camera cam;
+        private World world;
 
         #endregion
 
@@ -80,20 +83,32 @@ namespace GameStateManagement
             spriteBatch = ScreenManager.SpriteBatch;
             gameFont = content.Load<SpriteFont>("gamefont");
 
+            world = new World(ScreenManager.Game);
+            world.LoadContent();
+
             moveLeftBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(0, 320, 160, 160), buttonType.MOVE_LEFT);
             moveRightBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 320, 160, 160), buttonType.MOVE_RIGHT);
             jumpBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(0, 159, 160, 160), buttonType.JUMP);
             abilityBtn = new ClickableRectangle(ScreenManager.Game, new Rectangle(640, 159, 160, 160), buttonType.SPECIAL_ATTACK);
-            gameObjects.Add(moveLeftBtn);
-            gameObjects.Add(moveRightBtn);
-            gameObjects.Add(jumpBtn);
-            gameObjects.Add(abilityBtn);
+//             gameObjects.Add(moveLeftBtn);
+//             gameObjects.Add(moveRightBtn);
+//             gameObjects.Add(jumpBtn);
+//             gameObjects.Add(abilityBtn);
+            buttons.Add(moveLeftBtn);
+            buttons.Add(moveRightBtn);
+            buttons.Add(jumpBtn);
+            buttons.Add(abilityBtn);
+          
             p1s = new PlayerInControlBtn(ScreenManager.Game, new Point(200, 0), PlayerSelection.P1);
             p2s = new PlayerInControlBtn(ScreenManager.Game, new Point(400, 0), PlayerSelection.P2);
             p3s = new PlayerInControlBtn(ScreenManager.Game, new Point(600, 0), PlayerSelection.P3);
-            gameObjects.Add(p1s);
-            gameObjects.Add(p2s);
-            gameObjects.Add(p3s);
+//             gameObjects.Add(p1s);
+//             gameObjects.Add(p2s);
+//             gameObjects.Add(p3s);
+//             
+            buttons.Add(p1s);
+            buttons.Add(p2s);
+            buttons.Add(p3s);
             
             Player p1 = new Player(ScreenManager.Game, new Point(100, 100), gravity);
             Player p2 = new Player(ScreenManager.Game, new Point(100, 200), gravity);
@@ -106,12 +121,18 @@ namespace GameStateManagement
             gameObjects.Add(p2);
             gameObjects.Add(p3);
 
+            cam = new Camera(ScreenManager.GraphicsDevice.Viewport);
+            cam.activePlayer = players[currentPlayerIndex];
+
             foreach (GameObject gameObject in gameObjects)
             {
                 gameObject.LoadContent();
             }
 
-
+            foreach (GameObject button in buttons)
+            {
+                button.LoadContent();
+            }
             // A real game would probably have more content than this sample, so
             // it would take longer to load. We simulate that by delaying for a
             // while, giving you a chance to admire the beautiful loading screen.
@@ -193,6 +214,8 @@ namespace GameStateManagement
                     obj.Update(gameTime.ElapsedGameTime.Milliseconds);
                 }
 
+                cam.activePlayer = players[currentPlayerIndex];
+                cam.Update();
             }
         }
 
@@ -246,7 +269,6 @@ namespace GameStateManagement
                     CheckForMovement(touch.Position);
                     break;
                 }
-                
             }
 
             // if the user pressed the back button, we return to the main menu
@@ -255,7 +277,6 @@ namespace GameStateManagement
             {
                 LoadingScreen.Load(ScreenManager, false, ControllingPlayer, new BackgroundScreen(), new MainMenuScreen());
             }
-
         }
 
         private void CheckForAbilitiesUse(Vector2 position)
@@ -291,7 +312,19 @@ namespace GameStateManagement
 
             // Our player and enemy are both actually just text strings.
             spriteBatch = ScreenManager.SpriteBatch;
-            spriteBatch.Begin();
+
+            // Draw from camera tranformation!
+            spriteBatch.Begin(
+                SpriteSortMode.Deferred,
+                BlendState.AlphaBlend,
+                null,
+                null,
+                null,
+                null,
+                cam.transform
+            );
+
+            spriteBatch.Draw(world.background, world.destinationBox, Color.White);
 
             foreach (GameObject gameObject in gameObjects)
             {
@@ -311,8 +344,27 @@ namespace GameStateManagement
                     Debug.WriteLine("GameObject {0} has not set it's objectSprite", gameObject.ToString());
                 }
             }
-
             spriteBatch.End();
+
+            // Don't let camera fuck up the positioning of the object! 
+            spriteBatch.Begin();
+            foreach (GameObject button in buttons)
+            {
+                if (button.objectSprite != null)
+                {
+                    if (button.drawObject)
+                    {
+                        spriteBatch.Draw(
+                            button.objectSprite,
+                            button.destinationBox,
+                            button.sourceBox,
+                            Color.White
+                        );
+                    }
+                }
+            }
+            spriteBatch.End();
+
 
             // If the game is transitioning on or off, fade it out to black.
             if (TransitionPosition > 0)
