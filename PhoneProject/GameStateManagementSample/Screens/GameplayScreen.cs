@@ -37,7 +37,7 @@ namespace GameStateManagement
         Vector2 playerPosition = new Vector2(100, 100);
         Vector2 enemyPosition = new Vector2(100, 100);
         private SpriteBatch spriteBatch;
-        Vector2 gravity = new Vector2(0, 0.001f);
+        Vector2 gravity = new Vector2(0, 0.002f);
 
         private List<GameObject> gameObjects = new List<GameObject>();
         private List<GameObject> buttons = new List<GameObject>();
