@@ -27,9 +27,37 @@ bin\Windows Phone\Debug\
 C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
 C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
 C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\world.xnb
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\AppManifest.xaml
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml.g
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\background.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blank.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gradient.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\blue.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\green.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\red.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\TheLostVikings2.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp1.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp2.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\clickforp3.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\jumpBtn.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\leftBtn.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\rightbtn.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\specialAbilityBtn.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\world.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\menufont.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\Content\gamefont.xnb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.dll
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.pdb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\GameStateManagementSample.dll
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\GameStateManagementSample.pdb
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\GameStateManagementSample.xap
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Sten Marius\Desktop\NyMappe2\Army_of_Three\PhoneProject\GameStateManagementSample\obj\Windows Phone\Debug\WMAppManifest.xml
 bin\Windows Phone\Debug\
