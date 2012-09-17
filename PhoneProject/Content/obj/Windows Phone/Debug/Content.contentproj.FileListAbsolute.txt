@@ -1,5 +1,0 @@
-C:\XNA og C#\Mappe 2\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
-E:\Users\StenMarius\Desktop\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
-C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
-C:\Github\INnlevering2\Army_of_Three\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
-C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
