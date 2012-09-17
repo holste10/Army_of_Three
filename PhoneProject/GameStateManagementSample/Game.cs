@@ -29,6 +29,7 @@ namespace GameStateManagement
 
         GraphicsDeviceManager graphics;
         ScreenManager screenManager;
+        CollisionManager collisionManager;
         List<GameObject> gameObjects = new List<GameObject>();
 
         #endregion
@@ -45,6 +46,9 @@ namespace GameStateManagement
             graphics = new GraphicsDeviceManager(this);
             graphics.IsFullScreen = true;
             TargetElapsedTime = TimeSpan.FromTicks(333333);
+            collisionManager = new CollisionManager(this);
+            Components.Add(collisionManager);
+            Services.AddService(typeof(CollisionManager), collisionManager);
 
             // you can choose whether you want a landscape or portait
             // game by using one of the two helper functions.

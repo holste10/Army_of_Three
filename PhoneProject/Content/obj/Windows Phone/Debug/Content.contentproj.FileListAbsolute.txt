@@ -3,4 +3,3 @@ E:\Users\StenMarius\Desktop\PhoneProject\Content\obj\Windows Phone\Debug\Resolve
 C:\Users\Sten Marius\Documents\GitHub\Game\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
 C:\Github\INnlevering2\Army_of_Three\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
 C:\NITH\År3 - Høst\PG516 - XNA\GitHub\Army_of_Three\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
-C:\Users\ACES\Desktop\xna_mappe2\Army_of_Three\Army_of_Three\PhoneProject\Content\obj\Windows Phone\Debug\ResolveAssemblyReference.cache

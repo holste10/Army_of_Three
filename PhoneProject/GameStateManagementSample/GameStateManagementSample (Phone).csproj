@@ -82,11 +82,14 @@
   <ItemGroup>
     <Compile Include="Game.cs" />
     <Compile Include="Game\Camera.cs" />
+    <Compile Include="Game\CollisionManager.cs" />
     <Compile Include="Game\GameObjects\Character.cs" />
     <Compile Include="Game\GameObjects\ClickableRectangle.cs" />
     <Compile Include="Game\GameObjects\GameObject.cs" />
     <Compile Include="Game\GameObjects\Player.cs" />
     <Compile Include="Game\GameObjects\PlayerInControlBtn.cs" />
+    <Compile Include="Game\GameObjects\Tile.cs" />
+    <Compile Include="Game\ICollisionServie.cs" />
     <Compile Include="Game\World\World.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScreenManager\GameScreen.cs" />
