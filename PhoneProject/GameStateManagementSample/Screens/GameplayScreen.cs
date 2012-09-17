@@ -113,6 +113,18 @@ namespace GameStateManagement
             gameObjects.Add(p2);
             gameObjects.Add(p3);
 
+            Tile tile = new Tile(ScreenManager.Game, new Point(100, 400));
+            gameObjects.Add(tile);
+
+            tile = new Tile(ScreenManager.Game, new Point(700, 300));
+            gameObjects.Add(tile);
+
+            tile = new Tile(ScreenManager.Game, new Point(100, 300));
+            gameObjects.Add(tile);
+
+            tile = new Tile(ScreenManager.Game, new Point(800, 300));
+            gameObjects.Add(tile);
+
             cam = new Camera(ScreenManager.GraphicsDevice.Viewport);
             cam.activePlayer = players[currentPlayerIndex];
 
