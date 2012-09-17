@@ -37,7 +37,7 @@ namespace GameStateManagement
         Vector2 playerPosition = new Vector2(100, 100);
         Vector2 enemyPosition = new Vector2(100, 100);
         private SpriteBatch spriteBatch;
-        Vector2 gravity = new Vector2(0, 0.001f);
+        Vector2 gravity = new Vector2(0, 700.0f);
 
         private List<GameObject> gameObjects = new List<GameObject>();
         private List<GameObject> buttons = new List<GameObject>();
@@ -52,7 +52,7 @@ namespace GameStateManagement
         private ClickableRectangle moveRightBtn;
         private ClickableRectangle jumpBtn;
         private ClickableRectangle abilityBtn;
-
+        private float deltaTime;
         private Camera cam;
         private World world;
 
@@ -113,6 +113,18 @@ namespace GameStateManagement
             gameObjects.Add(p2);
             gameObjects.Add(p3);
 
+            Tile tile = new Tile(ScreenManager.Game, new Point(100, 400));
+            gameObjects.Add(tile);
+
+            tile = new Tile(ScreenManager.Game, new Point(700, 300));
+            gameObjects.Add(tile);
+
+            tile = new Tile(ScreenManager.Game, new Point(100, 300));
+            gameObjects.Add(tile);
+
+            tile = new Tile(ScreenManager.Game, new Point(800, 300));
+            gameObjects.Add(tile);
+
             cam = new Camera(ScreenManager.GraphicsDevice.Viewport);
             cam.activePlayer = players[currentPlayerIndex];
 
@@ -159,27 +171,14 @@ namespace GameStateManagement
         public override void Update(GameTime gameTime, bool otherScreenHasFocus,
                                                        bool coveredByOtherScreen)
         {
+            deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             base.Update(gameTime, otherScreenHasFocus, coveredByOtherScreen);
 
             if (IsActive)
             {
-                //// Apply some random jitter to make the enemy move around.
-                //const float randomization = 10;
-
-                //enemyPosition.X += (float)(random.NextDouble() - 0.5) * randomization;
-                //enemyPosition.Y += (float)(random.NextDouble() - 0.5) * randomization;
-
-                //// Apply a stabilizing force to stop the enemy moving off the screen.
-                //Vector2 targetPosition = new Vector2(
-                //    ScreenManager.GraphicsDevice.Viewport.Width / 2 - gameFont.MeasureString("Insert Gameplay Here").X / 2,
-                //    200);
-
-                //enemyPosition = Vector2.Lerp(enemyPosition, targetPosition, 0.05f);
-
-
                 foreach (Character p in players)
                 {
-                    p.ApplyGravity(gameTime.ElapsedGameTime.Milliseconds);
+                    p.ApplyGravity(deltaTime);
                     float x = p.velocity.X;
                     float y = p.velocity.Y;
                     if ((p.position.Y + p.sourceBox.Height) >= world.background.Height - 280
@@ -192,7 +191,7 @@ namespace GameStateManagement
                 }
                 foreach (GameObject obj in gameObjects)
                 {
-                    obj.Update(gameTime.ElapsedGameTime.Milliseconds);
+                    obj.Update(deltaTime);
                 }
 
                 cam.activePlayer = players[currentPlayerIndex];
@@ -233,22 +232,37 @@ namespace GameStateManagement
                     {
                         currentPlayerIndex = 2;
                     }
+                    CheckForAbilitiesUse(gs.Position);
                 }
             }
 
             if (input.TouchState.Count == 0)
             {
-                players[currentPlayerIndex].velocity = new Vector2(0, 0);
+                foreach (Character c in players)
+                {
+                    c.velocity = new Vector2(0, c.velocity.Y);
+                }
             }
             foreach (TouchLocation touch in input.TouchState)
             {
-                //Vector2 position = gs.Position;
                 if ((touch.State == TouchLocationState.Pressed
                         || touch.State == TouchLocationState.Moved))
                 {
                     CheckForMovement(touch.Position);
-                    break;
                 }
+
+
+                //else if (touch.State == TouchLocationState.Released)
+                //{
+                //    if(players[currentPlayerIndex].velocity.X > 0)
+                //        players[currentPlayerIndex].velocity = new Vector2(players[currentPlayerIndex].velocity.X - 200, 
+                //               players[currentPlayerIndex].velocity.Y);
+                //}
+                //else
+                //{
+                //    players[currentPlayerIndex].velocity = new Vector2(players[currentPlayerIndex].velocity.X + 200, 
+                //               players[currentPlayerIndex].velocity.Y);
+                //}
             }
             // if the user pressed the back button, we return to the main menu
             PlayerIndex player;
@@ -262,7 +276,6 @@ namespace GameStateManagement
         {
             if (jumpBtn.destinationBox.Contains((int)position.X, (int)position.Y))
             {
-                //Debug.WriteLine("X:{0}, Y:{1}", position.X, position.Y);
                 players[currentPlayerIndex].Jump();
             }
         }
@@ -271,11 +284,11 @@ namespace GameStateManagement
         {
             if (moveRightBtn.destinationBox.Contains((int)position.X, (int)position.Y))
             {
-                players[currentPlayerIndex].velocity = new Vector2(0.2f, 0);
+                players[currentPlayerIndex].velocity = new Vector2(200.0f, players[currentPlayerIndex].velocity.X);
             }
-            else if (moveLeftBtn.destinationBox.Contains((int)position.X, (int)position.Y))
+            if (moveLeftBtn.destinationBox.Contains((int)position.X, (int)position.Y))
             {
-                players[currentPlayerIndex].velocity = new Vector2(-0.2f, 0);
+                players[currentPlayerIndex].velocity = new Vector2(-200.0f, players[currentPlayerIndex].velocity.Y);
             }
             
         }
