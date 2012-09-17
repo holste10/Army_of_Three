@@ -58,7 +58,7 @@ namespace GameStateManagement
 
         public virtual void Jump()
         {
-            velocity = new Vector2(velocity.X, -1);
+            velocity = new Vector2(velocity.X, -300);
         }
     }
 }
